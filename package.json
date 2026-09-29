@@ -1,0 +1,7 @@
+{
+  "name": "tepuy-alertas-tasas",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test", "probe": "node probe.mjs"},
+  "engines": {"node": ">=22"}
+}

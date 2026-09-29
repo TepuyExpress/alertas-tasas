@@ -1,0 +1,8 @@
+{
+  "name": "tepuy-alertas-tasas",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-01",
+  "triggers": {"crons": ["7,37 * * * *"]},
+  "observability": {"enabled": true},
+  "d1_databases": [{"binding": "DB", "database_name": "tepuy-alertas-historial", "database_id": "27d63c45-293f-4044-bcc4-429ea8f8b3af"}]
+}
