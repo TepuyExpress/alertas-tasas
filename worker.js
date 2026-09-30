@@ -21,7 +21,7 @@ function one(items, filter) {
 export async function json(url, options = {}) {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(url, {...options, headers: {Accept: 'application/json', ...options.headers}, signal: AbortSignal.timeout(12000)});
+      const res = await fetch(url, {...options, headers: {Accept: 'application/json', 'User-Agent': 'TepuyExpressRateMonitor/1.0 (+https://github.com/TepuyExpress/alertas-tasas)', ...options.headers}, signal: AbortSignal.timeout(12000)});
       if (!res.ok) throw Error(`http_${res.status}`);
       return await res.json();
     } catch {
